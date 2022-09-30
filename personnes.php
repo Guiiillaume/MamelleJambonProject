@@ -56,7 +56,7 @@ if (isset($_POST['deletePersonne'])) {
             <div class="personnes-add">
                 <h2>Ajouter une personne</h2>
                 <form action="personnes.php" method="post">
-                    <input type="text" name="addPersonne" placeholder="Nom de la personne">
+                    <input required type="text" name="addPersonne" placeholder="Nom de la personne">
                     <input type="submit" value="Ajouter">
                 </form>
             </div>

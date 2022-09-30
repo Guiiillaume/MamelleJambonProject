@@ -1,5 +1,4 @@
 <?php
-
 if(!isset($_GET['projet'])) {
     header('Location: projets.php');
 }

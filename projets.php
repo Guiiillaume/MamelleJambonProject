@@ -66,11 +66,10 @@ if (isset($_POST['deleteProjet'])) {
                                     <input type="hidden" name="deleteProjetId" value="<?= $projet['id'] ?>">
                                     <!-- bouton détails projet -->
                                     <a href="<?php echo "detailProjet.php?projet=". $projet['id'] ?>">  
-                                    <input id="detailProjet" type="submit" name="detailProjet" value="Détails">
+                                    <input id="detailProjet" type="button" name="detailProjet" value="Détails"></a>
                                     <input id="deleteProjet" type="submit" name="deleteProjet" value="Supprimer">
                                 </form>
                             </li>
-                        </a>
                     <?php endforeach; ?>
                 </ul>
             </div>
@@ -78,7 +77,7 @@ if (isset($_POST['deleteProjet'])) {
             <div class="projets-add">
                 <h2>Ajouter un projet</h2>
                 <form action="projets.php" method="post">
-                    <input required type="text" name="addProjetTitre" maxlength="15" placeholder="Titre du projet">
+                    <input required type="text" name="addProjetTitre" maxlength="25" placeholder="Titre du projet">
                     <input type="text" name="addProjetNote" maxlength="50" placeholder="Note">
                     <!-- select d'ajout des personnes -->
                     <select required name="addProjetPersonnes[]" multiple>

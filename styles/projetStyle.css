@@ -172,9 +172,12 @@ body {
 }
 
 .projets ul li form input#deleteProjet, .projets ul li form input#detailProjet {
+    width: 100px;
     height: 30px;
-    padding: 5px;
     font-weight: bold;
+    background-color: rgb(220,220,220);
+    margin: auto;
+    margin-top: 10px;
 }
 
 .projets .projets-add {
@@ -219,7 +222,5 @@ body {
 .projets .projets-add form select option {
     border-bottom: 1px solid #395995;
 }
-
-
 
 

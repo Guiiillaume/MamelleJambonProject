@@ -143,6 +143,10 @@ body {
     height: 30px;
     padding: 5px;
     font-weight: bold;
+    background-color: rgb(220,220,220);
+    width: 100px;
+    height: 30px;
+    margin: auto;
 }
 
 .personnes .personnes-add {
